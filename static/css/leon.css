@@ -10,8 +10,10 @@
 	padding: 32px 20px 20px;
 	margin-left: 15px;
 	border: 1px solid #e8e8e8;
-	transition: all .5s cubic-bezier(.6,.4,.2,1),z-index 0s .12s;
+	transition: width .5s cubic-bezier(.6,.4,.2,1);
+				/*z-index 0s .12s;*/
 	background: #fff;
+	overflow: hidden;
 }
 .serverList li i{
 	width: 76px;
@@ -50,7 +52,7 @@
 }
 .serverList li .button{
 	position: absolute;
-	top: 336px;
+	bottom: -60px;
 	left: 50%;
 	margin-left: -100px;
 	width: 200px;
@@ -60,13 +62,15 @@
 	color: #fff;
 	text-align: center;
 	border-radius:5px;
+	display: block;
 	box-shadow:8px 0px 20px rgba(0,138,255,0.3);
 	background-color: #0097ff;
-    background-image: linear-gradient(-180deg, #008AFF 0%, #00DDFF 90%);
-    display: none;
-    transition: all .5s cubic-bezier(.6,.4,.2,1);
+    background-image: linear-gradient(-270deg, #008AFF 0%, #00DDFF 90%);
+    transition: all .5s cubic-bezier(.6,.4,.2,1) 0s 1;
 }
-.serverList li:hover{
+.serverList li .button:hover{background-image: linear-gradient(-90deg, #008AFF 0%, #00DDFF 90%); }
+.serverList li:hover,
+.serverList li.hover{
 	position: relative;
     z-index: 2;
     width: 314px;
@@ -78,20 +82,25 @@
     border-color: #008AFF;
 	box-shadow:0px 0px 25px rgba(0,138,255,0.3);
 }
-.serverList li.iLi-1:hover i{
+.serverList li:hover .button,
+.serverList li.hover .button{
+	bottom: 20px;
+}
+.serverList li.iLi-1:hover i,
+.serverList li.iLi-1.hover i{
 	background-image: url(../images/icon/sy-1-hover.png);
 }
-.serverList li.iLi-2:hover i{
+.serverList li.iLi-2:hover i,
+.serverList li.iLi-2.hover i{
 	background-image: url(../images/icon/sy-2-hover.png);
 }
-.serverList li.iLi-3:hover i{
+.serverList li.iLi-3:hover i,
+.serverList li.iLi-3.hover i{
 	background-image: url(../images/icon/sy-3-hover.png);
 }
-.serverList li.iLi-4:hover i{
+.serverList li.iLi-4:hover i,
+.serverList li.iLi-4.hover i{
 	background-image: url(../images/icon/sy-4-hover.png);
-}
-.serverList li:hover .button{
-	display: block;
 }
 
 /*industryList*/
@@ -177,6 +186,8 @@
 	margin-left: -13px;
 }
 .advantageList li{
+	position: relative;
+	top: 0;
 	width: 290px;
 	height: 310px;
 	padding: 48px;
@@ -185,6 +196,7 @@
 	background-color: #fff;
 	float: left;
 	margin-left: 13px;
+    transition: all .35s;
 }
 .advantageList li .title{
 	color: #333;
@@ -216,7 +228,10 @@
 .advantageList li.iLi-4 .Icon{
 	background-image: url(../images/icon/sy3-4.png);
 }
-
+.advantageList li:hover{
+	top: -12px;
+	box-shadow: 0 0 32px rgba(0, 0, 0, .1);
+}
 /*cooperationList*/
 .cooperationList{
 	margin-left: -6px;
@@ -311,6 +326,10 @@
 }
 
 /*Position*/
+.PlaceholderPosition{
+	background-color: #eee;
+	padding-top: 56px;
+}
 .Position{
 	position: relative;
 	height: 565px;
@@ -364,6 +383,7 @@
 }
 .wayList li{
 	position: relative;
+	top: 0;
 	width: 380px;
 	height: 410px;
 	margin-left: 28px;
@@ -375,7 +395,8 @@
     transition: all .3s;
 }
 .wayList li:hover{
-    box-shadow: 0 0 32px rgba(0,0,0,0.12);
+	top: -12px;
+    box-shadow: 0 0 52px rgba(0,0,0,0.12);
 }
 .wayList li .info{
 	padding: 24px 18px 18px;
