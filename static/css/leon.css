@@ -1,0 +1,427 @@
+/* serverList */
+.serverList{
+	margin-left: -15px;
+}
+.serverList li{
+	position: relative;
+	float: left;
+	width: 280px;
+	height: 350px;
+	padding: 32px 20px 20px;
+	margin-left: 15px;
+	border: 1px solid #e8e8e8;
+	transition: all .5s cubic-bezier(.6,.4,.2,1),z-index 0s .12s;
+	background: #fff;
+}
+.serverList li i{
+	width: 76px;
+	height: 76px;
+	display: block;
+	margin: 0 auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.serverList li.iLi-1 i{
+	background-image: url(../images/icon/sy-1.png);
+}
+.serverList li.iLi-2 i{
+	background-image: url(../images/icon/sy-2.png);
+}
+.serverList li.iLi-3 i{
+	background-image: url(../images/icon/sy-3.png);
+}
+.serverList li.iLi-4 i{
+	background-image: url(../images/icon/sy-4.png);
+}
+
+.serverList li .title{
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #333;
+	padding: 22px 0;
+}
+.serverList li .info{
+	font-size: 14px;
+	line-height: 22px;
+	color: #999;
+	width: 238px;
+	margin: 0 auto;
+}
+.serverList li .button{
+	position: absolute;
+	top: 336px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius:5px;
+	box-shadow:8px 0px 20px rgba(0,138,255,0.3);
+	background-color: #0097ff;
+    background-image: linear-gradient(-180deg, #008AFF 0%, #00DDFF 90%);
+    display: none;
+    transition: all .5s cubic-bezier(.6,.4,.2,1);
+}
+.serverList li:hover{
+	position: relative;
+    z-index: 2;
+    width: 314px;
+    height: 400px;
+    left: -16px;
+    top: -26px;
+    margin-right: -34px;
+    margin-bottom: -50px;
+    border-color: #008AFF;
+	box-shadow:0px 0px 25px rgba(0,138,255,0.3);
+}
+.serverList li.iLi-1:hover i{
+	background-image: url(../images/icon/sy-1-hover.png);
+}
+.serverList li.iLi-2:hover i{
+	background-image: url(../images/icon/sy-2-hover.png);
+}
+.serverList li.iLi-3:hover i{
+	background-image: url(../images/icon/sy-3-hover.png);
+}
+.serverList li.iLi-4:hover i{
+	background-image: url(../images/icon/sy-4-hover.png);
+}
+.serverList li:hover .button{
+	display: block;
+}
+
+/*industryList*/
+.industryList{}
+.industryList li{
+	width: 20%;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+.industryList li .title{
+	font-size: 26px;
+	line-height: 32px;
+	padding: 16px 0;
+}
+.industryList li .links{
+	font-size: 0;
+}
+.industryList li .links a{
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 8px;
+}
+.industryList li .links a::before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	content: '';
+	margin-top: -6px;
+	width: 1px;
+	height: 12px;
+	background-color: #fff;
+}
+.industryList li .links a:first-child::before{
+	display: none;
+}
+.industryList li .round{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	padding: 17px;
+	margin: 0 auto 36px;
+}
+.industryList li .round::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 98px;
+	height: 98px;
+	content: '';
+	border: 1px dashed #7198d4;
+	border-radius: 50%;
+	transition: all .2s ease-in;
+}
+.industryList li .round i{
+	width: 66px;
+	height: 66px;
+	display: inline-block;
+}
+.industryList li.iLi-1 .round i{
+	background-image: url(../images/icon/sy2-1.png);
+}
+.industryList li.iLi-2 .round i{
+	background-image: url(../images/icon/sy2-2.png);
+}
+.industryList li.iLi-3 .round i{
+	background-image: url(../images/icon/sy2-3.png);
+}
+.industryList li.iLi-4 .round i{
+	background-image: url(../images/icon/sy2-4.png);
+}
+.industryList li.iLi-5 .round i{
+	background-image: url(../images/icon/sy2-5.png);
+}
+
+.industryList li:hover .round::after{
+	animation: rotate 7s infinite linear;
+}
+
+/*advantageList*/
+.advantageList{
+	margin-left: -13px;
+}
+.advantageList li{
+	width: 290px;
+	height: 310px;
+	padding: 48px;
+	text-align: center;
+	border: 1px solid #E8EAEF;
+	background-color: #fff;
+	float: left;
+	margin-left: 13px;
+}
+.advantageList li .title{
+	color: #333;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+.advantageList li .desc{
+	font-size: 16px;
+	color: #999;
+	line-height: 22px;
+}
+.advantageList li .Icon{
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 36px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.advantageList li.iLi-1 .Icon{
+	background-image: url(../images/icon/sy3-1.png);
+}
+.advantageList li.iLi-2 .Icon{
+	background-image: url(../images/icon/sy3-2.png);
+}
+.advantageList li.iLi-3 .Icon{
+	background-image: url(../images/icon/sy3-3.png);
+}
+.advantageList li.iLi-4 .Icon{
+	background-image: url(../images/icon/sy3-4.png);
+}
+
+/*cooperationList*/
+.cooperationList{
+	margin-left: -6px;
+}
+.cooperationList li{
+	width:235px;
+	height:146px;
+	margin-left: 6px;
+	margin-bottom: 6px;
+	/*border: 1px solid #e8e8e8;*/
+	float: left;
+}
+.cooperationList li img{
+	vertical-align: top;
+}
+
+
+
+/*mapList*/
+.mapList{}
+.mapList li{
+	position: relative;
+	top: 0;
+	width: 20%;
+	float: left;
+	text-align: center;
+	transition: all .35s;
+}
+.mapList li:hover{
+	top: -10px;
+}
+.mapList li .title{
+	font-size: 16px;
+	line-height: 24px;
+}
+.mapList li .Icon{
+	width: 180px;
+	height: 180px;
+	padding: 27px 12px;
+	background: #fff;
+	box-shadow:0px 0px 15px rgba(0,138,255,0.2);
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto 25px;
+}
+.mapList li .Icon i{
+	width: 110px;
+	height: 126px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mapList li.iLi-1 .Icon i{
+	background-image: url(../images/icon/dt1-1.png);
+}
+.mapList li.iLi-2 .Icon i{
+	background-image: url(../images/icon/dt1-2.png);
+}
+.mapList li.iLi-3 .Icon i{
+	background-image: url(../images/icon/dt1-3.png);
+}
+.mapList li.iLi-4 .Icon i{
+	background-image: url(../images/icon/dt1-4.png);
+}
+.mapList li.iLi-5 .Icon i{
+	background-image: url(../images/icon/dt1-5.png);
+}
+
+/* dtList */
+.dtList{}
+.dtList li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.dtList li .title{
+	margin-top: 20px;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+/*map-swiper-container*/
+.map-swiper-container{
+
+}
+.map-swiper-container .swiper-slide{
+	width:600px;
+	height:400px;
+	background: #fff;
+	border-radius:5px;
+	box-shadow:0px 0px 30px rgba(15,50,80,0.25);
+}
+
+/*Position*/
+.Position{
+	position: relative;
+	height: 565px;
+	overflow: hidden;
+}
+.Position .inner,
+.Position .md,
+.Position .outer{
+	position: absolute;
+	left: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.Position .inner{
+	top: 94px;
+	margin-left: -309px;
+	width: 618px;
+	height: 618px;
+	background-image: url(../images/position/circle-inner.png);
+	animation: rotate 165s infinite linear;
+}
+.Position .md{
+	top: 50px;
+	margin-left: -353px;
+	width: 706px;
+	height: 706px;
+	background-image: url(../images/position/circle-md.png);
+	animation: rotate2 180s infinite linear;
+}
+.Position .outer{
+	top: 0;
+	margin-left: -402px;
+	width: 804px;
+	height: 804px;
+	background-image: url(../images/position/circle-outer.png);
+	animation: rotate 125s infinite linear;
+}
+.Position .position{
+	position: relative;
+	z-index: 2;
+	width: 1200px;
+	height: 534px;
+	background: url(../images/position/position.png) center bottom no-repeat;
+}
+
+/*wayList*/
+.wayList{
+	text-align: center;
+	font-size: 0;
+	margin-left: -28px;
+}
+.wayList li{
+	position: relative;
+	width: 380px;
+	height: 410px;
+	margin-left: 28px;
+	border-radius:5px;
+	box-shadow:0px 0px 10px rgba(86,86,86,0.15);
+	background-color: #fff;
+	display: inline-block;
+	overflow: hidden;
+    transition: all .3s;
+}
+.wayList li:hover{
+    box-shadow: 0 0 32px rgba(0,0,0,0.12);
+}
+.wayList li .info{
+	padding: 24px 18px 18px;
+	text-align: left;
+}
+.wayList li .info .title{
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 10px;
+}
+.wayList li .info .desc{
+	color: #999;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.InputFeature{
+	height: 505px;
+	padding-left: 650px;
+	padding-top: 160px;
+	background: url(../images/input.png) left center no-repeat;
+}
+.InputFeature .commonHd,
+.InputFeature .commonHd p{
+	width: 430px;
+	text-align: left;
+}
+.InputFeature .commonHd h2{
+	margin-bottom: 32px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(360deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
