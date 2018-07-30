@@ -14,62 +14,76 @@
         <div class="right_main">
             <div class="right_header">
                 <ul id="tab">
-                    <li value="realEstate">房产概况</li>
+                    <li value="realEstate" class="current">房产概况</li>
                     <li value="collection">人工采集</li>
                     <li value="inlineData">线上数据</li>
+                    <li>房价信息</li>
                 </ul>
             </div>
-            <div class="right_content" >
-                <p><span>图片</span>全国房产统计</p>
-                <ul id="content">
+            <div class="right_content commonBd hasBorderStyle">
+                <span></span><span></span><span></span><span></span>
+                <div class="commonHd">全国房产统计</div>
+                <ul id="content" class="countList clearfix">
                     <li>
-                        <p>城市数量</p>
-                        <p id="city_cnt">1</p>
+                        <p class="num" id="city_cnt">1</p>
+                        <p class="text">城市数量</p>
                     </li>
                     <li>
-                        <p>精品城市数量</p>
-                        <p id="city_cnt_gather">1</p>
+                        <p class="num" id="city_cnt_gather">1</p>
+                        <p class="text">精品城市数量</p>
                     </li>
                     <li>
-                        <p>行政区数量</p>
-                        <p id="area_cnt">1</p>
+                        <p class="num" id="area_cnt">1</p>
+                        <p class="text">行政区数量</p>
                     </li>
                     <li>
-                        <p>街道办乡镇数量</p>
-                        <p id="streetoffice_cnt">1</p>
+                        <p class="num" id="streetoffice_cnt">1</p>
+                        <p class="text">街道办乡镇数量</p>
                     </li>
                     <li>
-                        <p>小区数量</p>
-                        <p id="community_cnt">1</p>
+                        <p class="num" id="community_cnt">1</p>
+                        <p class="text">小区数量</p>
                     </li>
                     <li>
-                        <p>楼栋数量</p>
-                        <p id="building_cnt">1</p>
+                        <p class="num" id="building_cnt">1</p>
+                        <p class="text">楼栋数量</p>
                     </li>
                     <li>
-                        <p>单元数量</p>
-                        <p id="unit_cnt">1</p>
+                        <p class="num" id="unit_cnt">1</p>
+                        <p class="text">单元数量</p>
                     </li>
                     <li>
-                        <p>户数量</p>
-                        <p id="house_cnt">1</p>
+                        <p class="num" id="house_cnt">1</p>
+                        <p class="text">户数量</p>
                     </li>
                 </ul>
             </div>
-            <div class="right_footer">
-                <p><span>图片</span>精品城市列表</p>
-                <table>
+            <div class="right_footer commonBd hasBorderStyle">
+                <span></span><span></span><span></span><span></span>
+                <div class="commonHd">精品城市列表</div>
+                <table class="Table">
                     <thead>
                         <tr>
-                            <td>城市名称</td>
-                            <td>小区数量</td>
-                            <td>楼栋数</td>
-                            <td>单元数</td>
-                            <td>户数</td>
+                            <th>城市名称</th>
+                            <th>小区数量</th>
+                            <th>楼栋数</th>
+                            <th>单元数</th>
+                            <th>户数</th>
                         </tr>
                     </thead>
                     <tbody id="tBody_city">
-
+                        <tr>
+                            <td>北京</td><td>上海</td><td>广州</td><td>深圳</td><td>成都</td>
+                        </tr>
+                        <tr>
+                            <td>苏州</td><td>重庆</td><td>南京</td><td>天津</td><td>苏州</td>
+                        </tr>
+                        <tr>
+                            <td>北京</td><td>上海</td><td>广州</td><td>深圳</td><td>成都</td>
+                        </tr>
+                        <tr>
+                            <td>苏州</td><td>重庆</td><td>南京</td><td>天津</td><td>苏州</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
