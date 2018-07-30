@@ -4,10 +4,10 @@ ol,ul,li{ list-style: none; }
 table{ border-collapse: collapse; border-spacing: 0; }
 .right_main {
     right: 0;
-    width: 520px;
+    width: 5.20rem;
     height: 100%;
-    padding-top: 26px;
-    padding-right: 20px;
+    padding-top: .26rem;
+    padding-right: .20rem;
     position: absolute;
     z-index: 99999;
     box-sizing: border-box;
@@ -26,20 +26,20 @@ table{ border-collapse: collapse; border-spacing: 0; }
     padding: 0;
 }
 .right_header>ul{
-    margin-left: -12px;
+    margin-left: -.12rem;
 }
 .right_header>ul>li {
     list-style: none;
     cursor: pointer;
     float: left;
-    height: 46px;
-    width: 116px;
-    font-size: 18px;
-    line-height: 46px;
+    height: .46rem;
+    width: 1.16rem;
+    font-size: .18rem;
+    line-height: .46rem;
     color: #0165B9;
     border: 1px solid #163264;
     text-align: center;
-    margin-left: 12px;
+    margin-left: .12rem;
     background: url(/static/images/border-line.png) center no-repeat;
 }
 .right_header>ul>li.current{
@@ -48,12 +48,12 @@ table{ border-collapse: collapse; border-spacing: 0; }
 }
 .commonHd{
     position: relative;
-    padding-left: 14px;
-    font-size: 16px;
-    line-height: 26px;
-    height: 26px;
+    padding-left: .14rem;
+    font-size: .16rem;
+    line-height: .26rem;
+    height: .26rem;
     color: #00A8FF;
-    margin-bottom: 20px;
+    margin-bottom: .20rem;
 }
 .commonHd::before{
     position: absolute;
@@ -61,14 +61,14 @@ table{ border-collapse: collapse; border-spacing: 0; }
     top: 50%;
     content: "";
     transform: translateY(-50%);
-    height: 16px;
-    width: 4px;
+    height: .16rem;
+    width: .04rem;
     background-color: #008AFF;
 }
 .commonBd{
-    padding: 18px;
+    padding: .18rem;
     border: 1px solid #163264;
-    margin-top: 20px;
+    margin-top: .20rem;
     background-color: rgba(7, 21, 48, .9);
 }
 .right_header:after,.right_content:after {
@@ -82,8 +82,8 @@ table{ border-collapse: collapse; border-spacing: 0; }
 }
 .countList li{
     width: 50%;
-    height: 90px;
-    padding: 18px 0;
+    height: .90rem;
+    padding: .18rem 0;
     float: left;
     border-top: 1px solid #0D234C;
     border-right: 1px solid #0D234C;
@@ -93,19 +93,19 @@ table{ border-collapse: collapse; border-spacing: 0; }
     border-right: 0;
 }
 .countList li .num{
-    font-size: 24px;
-    line-height: 32px;
+    font-size: .24rem;
+    line-height: .32rem;
     color: #0066FF;
 }
 .countList li .text{
-    font-size: 14px;
+    font-size: .14rem;
     color: #3A4863;
 }
 
 .hasBorderStyle{position: relative;}
 .hasBorderStyle>span{
     position: absolute;
-    padding: 5px;
+    padding: .05rem;
     z-index: 2;
     border-style: solid;
     border-color: #104062;
@@ -146,20 +146,20 @@ table{ border-collapse: collapse; border-spacing: 0; }
     border: 1px solid #0E2550;
 }
 .Table th{
-    height: 40px;
+    height: .40rem;
     text-align: center;
     color: #8FB0EC;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 40px;
+    font-size: .14rem;
+    line-height: .40rem;
     background-color: #0B2147;
 }
 .Table tbody td{
     border: 1px solid #0E2550;
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 10px 6px;
+    font-size: .14rem;
+    line-height: .20rem;
+    padding: .10rem .06rem;
     color: #5491D6;
 }
 .Table tbody tr:nth-child(odd) {background: #07142f}

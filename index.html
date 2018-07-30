@@ -91,14 +91,22 @@
     </div>
 </div>
 </body>
-<script>
-    var _ctx = '';
-    $(document).ready(function(){
-        HomeMap.init();
-    });
-</script>
-<link rel="stylesheet" href="/static/css/cim/main_ol.css"/>
 
+<link rel="stylesheet" href="/static/css/cim/main_ol.css"/>
+<script>
+    (function(doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = clientWidth / 19.20 + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
 <!-- <script src="/static/js/plugins/jquery/jquery-2.1.1.js"></script>
 <script src = "/static/js/plugins/mapLibs/ol/ol.js"></script>
 <script src = "/static/js/plugins/mapLibs/xdmap/Base.js"></script>
