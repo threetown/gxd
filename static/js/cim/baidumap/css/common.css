@@ -1,0 +1,12 @@
+body { margin:0px; padding:0px; font-family:Microsoft YaHei; background-color:#FFFFFF; }
+::-webkit-scrollbar-track { margin:5px 0px; } 
+::-webkit-scrollbar-track-piece { background-color:#E0E0E0; -webkit-border-radius:4px; }
+::-webkit-scrollbar { width:8px; height:8px; }
+::-webkit-scrollbar-thumb { height:50px; width:7px; background-color:#FAFCFF; -webkit-border-radius:4px; outline:0 none; outline-offset:-2px; border:1px solid #BFBFBF; }
+
+html {
+	scrollbar-face-color: #FAFCFF;
+	scrollbar-shadow-color: #BFBFBF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #DDDDDD;
+}
