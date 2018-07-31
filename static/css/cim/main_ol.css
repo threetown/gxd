@@ -2,6 +2,9 @@
 .clearfix{*zoom:1;}
 ol,ul,li{ list-style: none; }
 table{ border-collapse: collapse; border-spacing: 0; }
+.ol-viewport{
+    font-size: 14px;
+}
 .right_main {
     right: 0;
     width: 5.20rem;
@@ -40,7 +43,8 @@ table{ border-collapse: collapse; border-spacing: 0; }
     border: 1px solid #163264;
     text-align: center;
     margin-left: .12rem;
-    background: url(/static/images/border-line.png) center no-repeat;
+    /*background: url(/static/images/border-line.png) center no-repeat;
+    background-size: .18rem .46rem;*/
 }
 .right_header>ul>li.current{
     background-color: #001E52;
@@ -165,3 +169,14 @@ table{ border-collapse: collapse; border-spacing: 0; }
 .Table tbody tr:nth-child(odd) {background: #07142f}
 .Table tbody tr:nth-child(even) {background: #0a1b3a}
 .Table tbody tr td:nth-child(2n) {color: #2AA1D2;}
+
+.scrollTable{
+    width:100%;
+    height:2.47rem;
+    overflow-y:auto;
+}
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{border-radius:9.99rem;border:.06rem solid #ebedf0;}
+::-webkit-scrollbar-track{box-shadow:1px 1px 8px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-thumb{min-height:.20rem;background-clip:content-box;border:.06rem solid #0B2147;}
+::-webkit-scrollbar-corner{background:transparent;}
